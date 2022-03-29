@@ -1,6 +1,13 @@
 import Adafruit_DHT
+#vcc->3.3
+#GND->GND
+#DATA->GPIO.17(physic pi: 11)
+#website: https://www.cnblogs.com/hilary0614/p/dht11.html(see the pin number)
   
 # Set sensor type : Options are DHT11,DHT22 or AM2302
+
+#problem u may meet
+
 #use Adafruit library, install the library first,
 #then if u are 4B use may need to change the platform_detect.py
 #then install this library.
@@ -9,6 +16,7 @@ sensor=Adafruit_DHT.DHT11
   
 # Set GPIO sensor is connected to
 #pay attentaion here it is a gpio number not physic pin number
+#https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-reduced-schematics.pdf
 gpio=17
 
   

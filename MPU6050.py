@@ -3,6 +3,14 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
+#used sensor is mpu6050 not 9250
+#vcc->3.3v
+#gnd->GND
+#SCL->SCL
+#SDA->SDA
+#sudo apt-get install i2c-tools python-smbus
+#pip3 install mpu6050-raspberrypi
+
 
 #sensor
 sensor = mpu6050(0x68)
